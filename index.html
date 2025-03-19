@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Websites Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .website-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        cursor: pointer;
+      }
+
+      .website-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .website-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      .website-card h2 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+
+      .website-card p {
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Website Projects</h1>
+    <div class="grid-container">
+      <a
+        href="https://pratyushkiran.github.io/ThreeJS-Konark/"
+        target="_blank"
+        class="website-card"
+      >
+        <img src="assets/threejskonark.png" alt="Website 1 Preview" />
+        <h2>Konark Sun Temple 3D ThreeJS</h2>
+        <p>Explore the magnificient Konakr Sun temple in 3D.</p>
+      </a>
+
+      <a
+        href="https://pratyushkiran.github.io/human-anatomy-ar-model-viewer/"
+        target="_blank"
+        class="website-card"
+      >
+        <img src="assets/humananatomyar.png" alt="Website 2 Preview" />
+        <h2>Human Anatomy AR</h2>
+        <p>Explore Human Anatomy in 3D and AR</p>
+      </a>
+
+      <a href="https://website3.com" target="_blank" class="website-card">
+        <img src="website3-screenshot.jpg" alt="Website 3 Preview" />
+        <h2>Website 3</h2>
+        <p>Description of your third website.</p>
+      </a>
+    </div>
+  </body>
+</html>
